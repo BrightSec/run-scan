@@ -38,7 +38,7 @@ jobs:
             [ ]
       - name: Stop the scan 🛑
         id: stop
-        uses: NeuraLegion/stop-scan@release
+        uses: BrightSec/stop-scan@release
         with:
           api_token: ${{ secrets.NEXPLOIT_TOKEN }}
           scan: ${{ steps.scan.outputs.id }}
